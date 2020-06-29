@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53fe4179c216b063ceb603aecd878cd9",
+    "revision": "9d437be5da6765af17407eb51b243ae1",
     "url": "/babysimulator/index.html"
   },
   {
-    "revision": "e8d4ba966b4b46319963",
-    "url": "/babysimulator/static/css/main.a032c357.chunk.css"
+    "revision": "bf862eb2a1b065deb1ce",
+    "url": "/babysimulator/static/css/main.2b7d9f1e.chunk.css"
   },
   {
     "revision": "a76c244a43ed06920b66",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/babysimulator/static/js/2.21bb8bcd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e8d4ba966b4b46319963",
+    "revision": "bf862eb2a1b065deb1ce",
     "url": "/babysimulator/static/js/main.34f89385.chunk.js"
   },
   {

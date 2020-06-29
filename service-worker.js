@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/babysimulator/precache-manifest.5d0b7f23ab6e86d6f37476afd5def89a.js"
+  "/babysimulator/precache-manifest.d25edc7335dc6153fde969d65b90de27.js"
 );
 
 self.addEventListener('message', (event) => {

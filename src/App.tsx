@@ -1,5 +1,4 @@
-import React, {ReactNode, useState} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 enum BabyActivities {
@@ -178,7 +177,7 @@ function buildInitialState(): State {
 
 function App() {
 
-    const [state, setState] = useState(buildInitialState());
+    const [state, setState] = React.useState(buildInitialState());
 
     return (
         <div className="App">

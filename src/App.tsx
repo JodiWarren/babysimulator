@@ -1,6 +1,42 @@
 import React from 'react';
 import './App.css';
 
+// From suggestion: https://github.com/Microsoft/TypeScript/issues/26223#issuecomment-622353532
+
+type ArrayLengthMutationKeys = 'splice' | 'push' | 'pop' | 'shift' | 'unshift' | number
+type ArrayItems<T extends Array<any>> = T extends Array<infer TItems> ? TItems : never
+type Tuple<T extends any[]> =
+    Pick<T, Exclude<keyof T, ArrayLengthMutationKeys>>
+    & { [Symbol.iterator]: () => IterableIterator< ArrayItems<T> > }
+
+type FixedLengthArray<Type, Count extends number> =
+    Count extends 1 ? Tuple<[Type]> :
+    Count extends 2 ? Tuple<[Type, Type]> :
+    Count extends 3 ? Tuple<[Type, Type, Type]> :
+    Count extends 4 ? Tuple<[Type, Type, Type, Type]> :
+    Count extends 5 ? Tuple<[Type, Type, Type, Type, Type]> :
+    Count extends 6 ? Tuple<[Type, Type, Type, Type, Type, Type]> :
+    Count extends 7 ? Tuple<[Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 8 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 9 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 10 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 11 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 12 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 13 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 14 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 15 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 16 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 17 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 18 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 19 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 20 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 21 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 22 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 23 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+    Count extends 24 ? Tuple<[Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type, Type]> :
+        never;
+
+
 enum BabyActivities {
     nappy = "NAPPY",
     sleep = "SLEEP",
@@ -13,41 +49,11 @@ interface Period {
 }
 
 interface Hour {
-    periods: [
-        Period,
-        Period,
-        Period,
-        Period
-    ]
+    periods: FixedLengthArray<Period, 4>
 }
 
 interface Day {
-    hours: [
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-        Hour,
-    ]
+    hours: FixedLengthArray<Hour, 24>
 }
 
 interface State {

@@ -1,11 +1,11 @@
 .App {
-    max-width: 600px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .schedule {
-    columns: 2;
+    columns: 300px auto;
 }
 
 .period {

@@ -5,7 +5,7 @@
 }
 
 .schedule {
-    columns: 300px auto;
+    /*columns: 300px auto;*/
 }
 
 .period {
@@ -14,4 +14,13 @@
 
 .period__time {
     margin-right: 10px;
+}
+
+.config__item {
+    width: 100%;
+    display: flex;
+}
+
+.config__item input[type=range] {
+    flex: 1;
 }

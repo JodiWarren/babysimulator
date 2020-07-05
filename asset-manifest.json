@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/babysimulator/static/css/main.32e09888.chunk.css",
-    "main.js": "/babysimulator/static/js/main.7d1907b8.chunk.js",
-    "main.js.map": "/babysimulator/static/js/main.7d1907b8.chunk.js.map",
+    "main.css": "/babysimulator/static/css/main.dd0d17d4.chunk.css",
+    "main.js": "/babysimulator/static/js/main.3fb88a9b.chunk.js",
+    "main.js.map": "/babysimulator/static/js/main.3fb88a9b.chunk.js.map",
     "runtime-main.js": "/babysimulator/static/js/runtime-main.9de517cf.js",
     "runtime-main.js.map": "/babysimulator/static/js/runtime-main.9de517cf.js.map",
     "static/js/2.fc222b6e.chunk.js": "/babysimulator/static/js/2.fc222b6e.chunk.js",
     "static/js/2.fc222b6e.chunk.js.map": "/babysimulator/static/js/2.fc222b6e.chunk.js.map",
     "index.html": "/babysimulator/index.html",
-    "precache-manifest.1cce0a00e6c05093d7d3a1836a19b043.js": "/babysimulator/precache-manifest.1cce0a00e6c05093d7d3a1836a19b043.js",
+    "precache-manifest.427f893236bae2c3e888cbe921038848.js": "/babysimulator/precache-manifest.427f893236bae2c3e888cbe921038848.js",
     "service-worker.js": "/babysimulator/service-worker.js",
-    "static/css/main.32e09888.chunk.css.map": "/babysimulator/static/css/main.32e09888.chunk.css.map",
+    "static/css/main.dd0d17d4.chunk.css.map": "/babysimulator/static/css/main.dd0d17d4.chunk.css.map",
     "static/js/2.fc222b6e.chunk.js.LICENSE.txt": "/babysimulator/static/js/2.fc222b6e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9de517cf.js",
     "static/js/2.fc222b6e.chunk.js",
-    "static/css/main.32e09888.chunk.css",
-    "static/js/main.7d1907b8.chunk.js"
+    "static/css/main.dd0d17d4.chunk.css",
+    "static/js/main.3fb88a9b.chunk.js"
   ]
 }
